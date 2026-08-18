@@ -1,2 +1,2 @@
-# my-first-website
+# index.html
 its a birthday wish i created
