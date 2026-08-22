@@ -1,298 +1,217 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Birthday to Me</title>
-    <style>
-      :root {
-        --bg1: #ffd9e7;
-        --bg2: #f3e8ff;
-        --bg3: #dff6ff;
-        --card: rgba(255, 255, 255, 0.8);
-        --pink: #d9538a;
-        --pink-deep: #bf426e;
-        --purple: #9a82ff;
-        --text: #5f4658;
-      }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Panda's Cafe|Sweet Little Things</title>
+        <link rel="stylesheet" href="stylee.css">
+    </head>
+    <body>
+        <!--Navigation-->
+        <header>
+            <nav class="navbar">
+                <div class="logo">Panda's Cafe🐼🍵🎀</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#desserts">Desserts</a></li>
+                    <li><a href="#coffee">Coffee</a></li>
+                    <li><a href="#Panda's-special">Panda's Special</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Hero Section-->
+        <section id="home" class="hero">
+            <div class="hero-text">
 
-      * { box-sizing: border-box; }
+                <p class="small-title">✨A little sweetness for your day✨</p>
 
-      html, body {
-        margin: 0;
-        min-height: 100%;
-        font-family: Arial, Helvetica, sans-serif;
-        color: var(--text);
-      }
+                <h1>
+                    Sweet moments<br>
+                    bloom here🌷
+                </h1>
 
-      body {
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        overflow: hidden;
-        background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
-      }
+                <p class="hero-description">Handmade desserts, cozy flavours and a sprinkle
+                                                            of happiness in every bite.
+                </p>
 
-      .card {
-        position: relative;
-        width: min(92vw, 560px);
-        padding: 2.3rem 1.5rem 1.8rem;
-        text-align: center;
-        border-radius: 30px;
-        background: var(--card);
-        box-shadow: 0 18px 45px rgba(122, 82, 122, 0.18);
-        backdrop-filter: blur(6px);
-      }
+                <a href="#desserts" class="button">
+                    Explore desserts🍰
+                </a>
+            </div>
+        </section>
+        <!--Decorative Quote-->
+        <section class="quote">
+            <p>
+                "Life is short. Have the dessert.🍓"
+            </p>
+        </section>
+        <!--Desserts-->
+        <section id="desserts" class="desserts">
+            <p class="section-subtitle">Our little collection</p>
+            <h2>Sweet Treats🍰</h2>
+            <div class="dessert-container">
+                <div class="dessert-card">
+                    <div class="dessert-icon">🧇🫐🍒🍓</div>
+                    <h3>Berry Dream Waffle</h3>
+                    <p>
+                        A fluffy waffle topped with berries, cream and a little bit of magic.
+                    </p>
+                    <span>147</span>
+                </div>
 
-      .badge {
-        font-size: 1.05rem;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--pink-deep);
-        font-weight: 700;
-      }
+                <div class="dessert-card">
+                    <div class="dessert-icon">🍰🍓</div>
+                    <h3>Strawberry Cloud Cake</h3>
+                    <p>
+                        Soft vanilla cake layered with dreamy strawberry cream.
+                    </p>
+                    <span>199</span>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-icon">🧁</div>
+                    <h3>Blush Cupcake</h3>
+                    <p>
+                        A tiny cupcake with creamy frosting and lots of sweetness.
+                    </p>
+                    <span>99</span>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-icon">🍮</div>
+                    <h3>Vanilla Pudding</h3>
+                    <p>
+                        Silky, creamy and comforting. Simple sweetness in a cup.
+                    </p>
+                    <span>129</span>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-icon">🍫</div>
+                    <h3>Chocolate Bliss</h3>
+                    <p>
+                        Rich chocolate goodness for those serious chocolate cravings.
+                    </p>
+                    <span>179</span>
+                </div>
 
-      h1 {
-        margin: 0.7rem 0 0.8rem;
-        font-size: clamp(2.2rem, 5vw, 3.3rem);
-        color: var(--pink);
-      }
+            
+        </section>
+        <!--Coffee-->
+        <section id="coffee" class="coffee">
+            <p class="section-subtitle">Freshly brewed with love🍵</p>
+            <h2>Coffee Corner🍵</h2>
+            <div class="coffee-conatiner">
+                <div class="coffee-card">
+                    <div class="coffee icon">🍵🍓</div>
+                    <h3>Strawberry Cream Latte</h3>
+                    <p>
+                        Creamy coffee, Strawberry flavour and Fluffy cream.
+                    </p>
+                    <span>210</span>
+                    </div>
+             <div class="coffee-card">
+                <div class="coffee icon">☁️🍫</div>
+                <h3>Choco Cloud Mocha</h3>
+                <p>
+                    Chocolate coffee topped with a huge cloud of cream.
+                </p>
+                <span>200</span>
+             </div>       
+             <div class="coffee-card">
+                <div class="coffee-icon">🍓🍫</div>
+                <h3>Strawberry Mocha</h3>
+                <p>
+                    Chocolate + Strawberry + Coffee.
+                </p>
+                <span>250</span>
+             </div>
+             <div class="coffee-card">
+                <div class="coffee-icon">🍌🍵</div>
+                <h3>Banana Cream Coffee</h3>
+                <p>
+                    Banana milk + Coffee + Cream.
+                </p>
+                <span>195</span>
+             </div>
+        </section>
+        <!--Panda's Special-->
+        <section id="panda's-special" class="panda's-special">
+            <p class="section-subtitle">Made with a little extra magic✨</p>
+            <h2>Extra Specials</h2>
+            <div class="panda's-special-container">
+                <div class="panda's-special-card">
+                    <div class="panda's-special-icon">🐼🍵</div>
+                    <h3>Panda's "I need coffee" Latte</h3>
+                    <p>
+                        A sweet creamy latte with chocolate drizzle, vanilla cream and a tiny cookie on top.
+                    </p>
+                    <span>250</span>
 
-      .message {
-        margin: 0 auto 1.2rem;
-        max-width: 36ch;
-        line-height: 1.7;
-        font-size: 1.06rem;
-      }
+                </div>
+                <div class="panda's-special-card">
+                    <div class="panda's-special-icon">🐼⚡</div>
+                    <h3>Panda Fuel</h3>
+                    <p>
+                        Mocha + Vanilla + Cookie crumble + cream.
+                    </p>
+                    <span>230</span>
 
-      .cake-wrap {
-        position: relative;
-        width: 230px;
-        height: 170px;
-        margin: 1.8rem auto 1rem;
-      }
+                </div>
+                <div class="panda's-special-card">
+                    <div class="panda's-special-icon">🎀🍵</div>
+                    <h3>One More Sip</h3>
+                    <p>
+                        Caramel latte with extra cream because one cup is never enough. 
+                    </p>
+                    <span>250</span>
+                </div>
+                <div class="panda's-special-card">
+                    <div class="panda's-special-icon">🍌🍵</div>
+                    <h3>Banana Split Coffee</h3>
+                    <p>
+                        Banana + Chocolate + Vanilla coffee.
+                    </p>
+                    <span>230</span>
+                </div>
+        </section>
+        <!--About-->
+        <section id="about" class="about">
+            <div class="about-content">
+                <p class="section-subtitle">Our Story🌷</p>
+                <h2>Made with love,<br>served with smile.</h2>
+                <p>
+                    Panda's Cafe began with one simple belif:
+                             desserts should make ordinary moments feel a little more special.
+                </p>
+                <p>
+                    From cozy homemade puddings to dreamy cakes,
+                                      every sweet treat is made to bring a little happiness to your day.
+                </p>
+                <div class="heart">💓</div>
+            </div>
+        </section>
+        <!--Contacts-->
+        <section id="contacts" class="contacts">
+            <p class="section-subtitle">Come say hello 💌</p>
+            <h2>Let's make something sweet!</h2>
+            <p>
+                📍24 Cupcake Street, Sugarplum Valley.
+            </p>
+            <p>
+                📞 +91 9876543210
+            </p>
+            <p>
+                ✉️ hello@pandacafe.com
+            </p>
+        </section>
+        <!--Footer-->
+        <footer>
+            <p>
+                Made with 🌸,🍰 and lots of love.
+            </p>
+            <p>
+                © 2026 Panda's Cafe
+            </p>
+        </footer>       
 
-      .cake {
-        position: absolute;
-        left: 22px;
-        bottom: 12px;
-        width: 180px;
-        height: 90px;
-        background: #ffc2d8;
-        border-radius: 14px 14px 24px 24px;
-        box-shadow: 0 10px 0 #e7a1bd;
-      }
-
-      .cake::before {
-        content: "";
-        position: absolute;
-        left: 7px;
-        top: -14px;
-        width: 165px;
-        height: 26px;
-        background: #fff6fb;
-        border-radius: 50%;
-      }
-
-      .candle {
-        position: absolute;
-        left: 82px;
-        top: -62px;
-        width: 16px;
-        height: 52px;
-        background: #a38df3;
-        border-radius: 6px;
-      }
-
-      .flame {
-        position: absolute;
-        left: -2px;
-        top: -24px;
-        width: 20px;
-        height: 28px;
-        border-radius: 50% 50% 48% 48%;
-        background: linear-gradient(#ffe57a, #ffb000);
-        box-shadow: 0 0 16px rgba(255, 194, 66, 0.95);
-        animation: flicker 0.75s ease-in-out infinite alternate;
-      }
-
-      .flame::after {
-        content: "";
-        position: absolute;
-        inset: 8px 6px 7px 6px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.35);
-      }
-
-      .hidden { display: none; }
-
-      .surprise-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        padding: 0.9rem 1.5rem;
-        border: none;
-        background: linear-gradient(135deg, var(--pink), var(--pink-deep));
-        color: white;
-        border-radius: 999px;
-        font-size: 1rem;
-        cursor: pointer;
-        box-shadow: 0 10px 22px rgba(217, 83, 138, 0.35);
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
-      }
-
-      .surprise-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 14px 28px rgba(217, 83, 138, 0.42);
-      }
-
-      .surprise {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease, opacity 0.35s ease, margin 0.35s ease;
-        margin-top: 0;
-        font-size: 1rem;
-        line-height: 1.8;
-      }
-
-      #surprise-toggle:checked ~ .surprise {
-        max-height: 420px;
-        opacity: 1;
-        margin-top: 1.5rem;
-      }
-
-      .footer {
-        margin-top: 1.6rem;
-        font-size: 0.95rem;
-        opacity: 0.75;
-      }
-
-      .heart {
-        position: fixed;
-        bottom: -12vh;
-        font-size: 1.7rem;
-        animation: drift 9s linear infinite;
-        opacity: 0.7;
-        user-select: none;
-        pointer-events: none;
-      }
-
-      .h1 { left: 10%; animation-delay: 0s; }
-      .h2 { left: 30%; animation-delay: 2s; }
-      .h3 { left: 70%; animation-delay: 1s; }
-      .h4 { left: 88%; animation-delay: 3s; }
-
-      .confetti-layer {
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        overflow: hidden;
-      }
-
-      .confetti {
-        position: absolute;
-        top: -20px;
-        width: 10px;
-        height: 18px;
-        opacity: 0.9;
-        border-radius: 4px;
-        animation: fall linear forwards;
-      }
-
-      @keyframes flicker {
-        0% { transform: scale(1) rotate(-2deg); }
-        100% { transform: scale(1.18) rotate(2deg); }
-      }
-
-      @keyframes drift {
-        0% { transform: translateY(0) rotate(0deg); }
-        100% { transform: translateY(-120vh) rotate(360deg); }
-      }
-
-      @keyframes fall {
-        0% {
-          transform: translate3d(0, 0, 0) rotate(0deg);
-          opacity: 1;
-        }
-        100% {
-          transform: translate3d(var(--x), 120vh, 0) rotate(720deg);
-          opacity: 0;
-        }
-      }
-
-      @media (max-width: 500px) {
-        .card {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-
-        .message {
-          font-size: 0.98rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="confetti-layer" aria-hidden="true"></div>
-
-    <div class="heart h1">💗</div>
-    <div class="heart h2">🌸</div>
-    <div class="heart h3">✨</div>
-    <div class="heart h4">💖</div>
-
-    <div class="card">
-      <div class="badge">A little celebration</div>
-      <h1>Happy Birthday to Me! 🎂</h1>
-
-      <p class="message">
-        Today is my special day, and I’m choosing joy, gratitude, and fresh dreams for this new chapter.
-        May this year bring peace, laughter, beautiful memories, and plenty of reasons to smile. ✨
-      </p>
-
-      <div class="cake-wrap" aria-label="Birthday cake illustration">
-        <div class="cake">
-          <div class="candle">
-            <div class="flame"></div>
-          </div>
-        </div>
-      </div>
-
-      <input class="hidden" type="checkbox" id="surprise-toggle" />
-      <label for="surprise-toggle" class="surprise-btn">🎁 Open my birthday surprise</label>
-
-      <div class="surprise">
-        🌸✨💗<br /><br />
-        I hope this new year of my life is filled with bold dreams, kind moments, exciting adventures, and
-        all the love and confidence I deserve. <br /><br />
-        May every little wish I carry slowly turn into a beautiful reality. 🌷<br /><br />
-        <strong>And yes, I absolutely deserve this cake. 😌🎂</strong>
-      </div>
-
-      <div class="footer">Made with love by me 💗</div>
-    </div>
-
-    <script>
-      const confettiLayer = document.querySelector('.confetti-layer');
-      const palette = ['#ff66a3', '#ffd166', '#7bdff2', '#a78bfa', '#ff9f1c', '#7ee081'];
-
-      function spawnConfetti() {
-        for (let i = 0; i < 36; i++) {
-          const piece = document.createElement('span');
-          piece.className = 'confetti';
-          piece.style.left = `${Math.random() * 100}%`;
-          piece.style.background = palette[Math.floor(Math.random() * palette.length)];
-          piece.style.setProperty('--x', `${(Math.random() - 0.5) * 240}px`);
-          piece.style.animationDuration = `${4 + Math.random() * 5}s`;
-          piece.style.animationDelay = `${Math.random() * 1.5}s`;
-          confettiLayer.appendChild(piece);
-          setTimeout(() => piece.remove(), 9000);
-        }
-      }
-
-      setInterval(spawnConfetti, 2300);
-      spawnConfetti();
-    </script>
-  </body>
+    </body>
 </html>
